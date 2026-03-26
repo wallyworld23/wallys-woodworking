@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | Wally's Woodworking | Virginia Beach, VA</title>
+<meta name="description" content="Browse the portfolio of Wally's Woodworking — custom furniture, handcrafted décor, and restorations built in Virginia Beach, VA.">
+<link rel="canonical" href="https://www.wallyswoodworking.com/gallery.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.wallyswoodworking.com/gallery.html">
+<meta property="og:title" content="Gallery | Wally's Woodworking">
+<meta property="og:description" content="Custom furniture, handcrafted décor, and restorations built in Virginia Beach, VA.">
+<meta property="og:image" content="https://www.wallyswoodworking.com/images/og-image.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- Shared Stylesheet -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar">
+  Now serving <a href="contact.html">Virginia Beach &amp; Hampton Roads</a> &nbsp;·&nbsp; Free consultations &nbsp;·&nbsp; Call <a href="tel:+17575550182">(757) 555-0182</a>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo" aria-label="Wally's Woodworking Home">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="16" cy="16" r="13" stroke="#C8A96E" stroke-width="1.5" fill="none"/>
+        <path d="M16 7 L16 25 M9 13 L23 13 M9 19 L23 19" stroke="#C8A96E" stroke-width="1.5" fill="none"/>
+        <rect x="11" y="14.5" width="10" height="3" fill="#C8A96E" rx="0.5"/>
+      </svg>
+    </div>
+    <div class="nav-logo-text">
+      <span class="brand">Wally's Woodworking</span>
+      <span class="tagline">Handcrafted · Virginia Beach</span>
+    </div>
+  </a>
+
+  <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-eyebrow">The Work</div>
+  <h1>Pieces Built for <em>Real Homes</em></h1>
+  <p>Every item here was designed for a specific client, built by hand in Virginia Beach, and delivered to a real home in Hampton Roads. Browse by category below.</p>
+</div>
+
+<!-- GALLERY SECTION -->
+<section class="section section-light">
+  <!-- Filter Tabs -->
+  <div class="gallery-filters" role="tablist" aria-label="Filter gallery by category">
+    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Work</button>
+    <button class="filter-btn" data-filter="furniture" role="tab" aria-selected="false">Custom Furniture</button>
+    <button class="filter-btn" data-filter="decor" role="tab" aria-selected="false">Décor &amp; Accents</button>
+    <button class="filter-btn" data-filter="restoration" role="tab" aria-selected="false">Restorations</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery-full-grid" id="gallery-grid">
+
+    <!-- FURNITURE -->
+    <div class="gal-item" data-category="furniture">
+      <img src="images/gallery/furniture-01.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75'"
+           alt="Custom white entertainment cabinet with open shelving" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">Entertainment Cabinet</div>
+          <div class="gal-item-sub">White oak · Virginia Beach</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gal-item" data-category="furniture">
+      <img src="images/gallery/furniture-02.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=75'"
+           alt="Custom mudroom bench with storage cubbies" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">Mudroom Storage Bench</div>
+          <div class="gal-item-sub">Painted MDF + pine · Chesapeake</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gal-item" data-category="furniture">
+      <img src="images/gallery/furniture-03.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75'"
+           alt="Mid-century style side table with hairpin legs" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">Mid-Century Side Table</div>
+          <div class="gal-item-sub">Cherry &amp; steel hairpin legs · Norfolk</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gal-item" data-category="furniture">
+      <img src="images/gallery/furniture-04.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=75'"
+           alt="Floating walnut shelf system" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">Floating Shelf System</div>
+          <div class="gal-item-sub">Walnut · 72" span · Virginia Beach</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gal-item" data-category="furniture">
+      <img src="images/gallery/furniture-05.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=75'"
+           alt="Custom live-edge dining table" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">Live-Edge Dining Table</div>
+          <div class="gal-item-sub">Black walnut · Seats 8 · Norfolk</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gal-item" data-category="furniture">
+      <img src="images/gallery/furniture-06.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=800&q=75'"
+           alt="Custom home office desk" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">Home Office Desk</div>
+          <div class="gal-item-sub">Hard maple · 72"×30" · Chesapeake</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DÉCOR -->
+    <div class="gal-item" data-category="decor">
+      <img src="images/gallery/decor-01.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1532372576444-dda954194ad0?w=800&q=75'"
+           alt="Live-edge black walnut charcuterie board" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">Live-Edge Charcuterie Board</div>
+          <div class="gal-item-sub">Black walnut</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gal-item" data-category="decor">
+      <img src="images/gallery/decor-02.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=800&q=75'"
+           alt="Set of handcrafted cutting boards" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">End-Grain Cutting Board Set</div>
+          <div class="gal-item-sub">Maple, cherry &amp; walnut</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gal-item" data-category="decor">
+      <img src="images/gallery/decor-03.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=75'"
+           alt="Rustic wood serving tray with handles" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">Serving Tray with Handles</div>
+          <div class="gal-item-sub">Reclaimed pine</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESTORATIONS -->
+    <div class="gal-item" data-category="restoration">
+      <img src="images/gallery/restoration-01.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75'"
+           alt="Restored antique dresser" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">Antique Dresser Restoration</div>
+          <div class="gal-item-sub">Full refinish &amp; hardware replacement</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gal-item" data-category="restoration">
+      <img src="images/gallery/restoration-02.jpg"
+           onerror="this.src='https://images.unsplash.com/photo-1532372576444-dda954194ad0?w=800&q=75'"
+           alt="Refinished heirloom dining chairs" loading="lazy">
+      <div class="gal-item-overlay">
+        <div>
+          <div class="gal-item-label">Heirloom Chair Set</div>
+          <div class="gal-item-sub">Stripped, repaired &amp; refinished</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /gallery-full-grid -->
+</section>
+
+<!-- CTA BANNER -->
+<div class="commission-banner">
+  <div class="commission-text">
+    <h2>Don't See What<br>You're Looking For?</h2>
+    <p>Every piece I build is one-of-a-kind. If you have a specific vision — a room, a size, a wood type — let's talk. I'll build it exactly the way you imagined it.</p>
+    <a href="contact.html" class="btn-primary">Start a Conversation</a>
+  </div>
+  <ul class="commission-features" aria-label="What you get">
+    <li><span class="check" aria-hidden="true">✓</span>Free 30-minute design consultation</li>
+    <li><span class="check" aria-hidden="true">✓</span>Written quote before any work begins</li>
+    <li><span class="check" aria-hidden="true">✓</span>Progress updates throughout the build</li>
+    <li><span class="check" aria-hidden="true">✓</span>Delivered and installed in Hampton Roads</li>
+    <li><span class="check" aria-hidden="true">✓</span>Satisfaction guaranteed on every piece</li>
+  </ul>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="logo-wrap">
+        <div class="logo-icon">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="13" stroke="#C8A96E" stroke-width="1.5" fill="none"/>
+            <path d="M16 7 L16 25 M9 13 L23 13 M9 19 L23 19" stroke="#C8A96E" stroke-width="1.5" fill="none"/>
+            <rect x="11" y="14.5" width="10" height="3" fill="#C8A96E" rx="0.5"/>
+          </svg>
+        </div>
+        <span class="brand-name">Wally's Woodworking</span>
+      </div>
+      <p>Handcrafted custom furniture and home décor, built one piece at a time in Virginia Beach, VA. Every order is made by hand, to order — never mass-produced.</p>
+      <div class="footer-social">
+        <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Wally</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html#custom-furniture">Custom Furniture</a></li>
+        <li><a href="services.html#home-decor">Home Décor &amp; Accents</a></li>
+        <li><a href="services.html#custom-furniture">Built-Ins &amp; Cabinetry</a></li>
+        <li><a href="services.html#repairs">Repairs &amp; Restorations</a></li>
+        <li><a href="contact.html">Free Consultation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-contact">
+      <h4>Contact</h4>
+      <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:2px" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg><span><strong>Phone</strong><a href="tel:+17575550182">(757) 555-0182</a></span></p>
+      <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:2px" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><strong>Email</strong><a href="mailto:wally@wallyswoodworking.com">wally@wallyswoodworking.com</a></span></p>
+      <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:2px" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span><strong>Location</strong>Virginia Beach, VA<br>Serving all Hampton Roads</span></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Wally's Woodworking. All rights reserved. Proudly handcrafted in Virginia Beach, VA.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile nav toggle
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open'));
+});
+
+// Gallery filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const galleryItems = document.querySelectorAll('.gal-item[data-category]');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filter = btn.getAttribute('data-filter');
+
+    filterBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+
+    galleryItems.forEach(item => {
+      if (filter === 'all' || item.getAttribute('data-category') === filter) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
