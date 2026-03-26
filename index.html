@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO -->
+<title>Wally's Woodworking | Custom Furniture & Décor | Virginia Beach, VA</title>
+<meta name="description" content="Handcrafted bespoke furniture and home décor built to order in Virginia Beach, VA. Custom tables, cabinets, shelving, décor and more. Free consultations. Serving all of Hampton Roads.">
+<meta name="keywords" content="custom furniture Virginia Beach, bespoke woodworking Hampton Roads, handcrafted furniture, custom cabinets, wood décor, furniture maker Virginia">
+<meta name="author" content="Wally Wallace">
+<link rel="canonical" href="https://www.wallyswoodworking.com/">
+
+<!-- Open Graph (Facebook / LinkedIn sharing) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.wallyswoodworking.com/">
+<meta property="og:title" content="Wally's Woodworking | Custom Furniture & Décor | Virginia Beach">
+<meta property="og:description" content="Handcrafted bespoke furniture and home décor built to order in Virginia Beach, VA. Free consultations — serving all of Hampton Roads.">
+<meta property="og:image" content="https://www.wallyswoodworking.com/images/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wally's Woodworking | Virginia Beach">
+<meta name="twitter:description" content="Handcrafted custom furniture and décor built to order in Virginia Beach, VA.">
+<meta name="twitter:image" content="https://www.wallyswoodworking.com/images/og-image.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- Structured Data (Local Business) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Wally's Woodworking",
+  "description": "Handcrafted bespoke furniture and home décor built to order in Virginia Beach, VA.",
+  "url": "https://www.wallyswoodworking.com",
+  "telephone": "(757) 555-0182",
+  "email": "wally@wallyswoodworking.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Virginia Beach",
+    "addressRegion": "VA",
+    "addressCountry": "US"
+  },
+  "areaServed": "Hampton Roads, Virginia",
+  "priceRange": "$$",
+  "openingHours": "Mo-Sa 08:00-18:00"
+}
+</script>
+
+<style>
+/* ===========================
+   DESIGN SYSTEM
+=========================== */
+:root {
+  --dark:        #1E1410;
+  --walnut:      #5C3D2E;
+  --walnut-light:#7A5444;
+  --gold:        #C8A96E;
+  --gold-light:  #E8D5A8;
+  --cream:       #F5EFE0;
+  --off-white:   #FAF8F3;
+  --text:        #2C2219;
+  --text-mid:    #6B5C50;
+  --text-light:  #A0907E;
+  --border:      #E8DFD0;
+  --section-gap: 100px;
+  --nav-h:       80px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Montserrat', sans-serif; color: var(--text); background: var(--off-white); overflow-x: hidden; }
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+p { line-height: 1.8; }
+a { text-decoration: none; color: inherit; }
+img { display: block; width: 100%; object-fit: cover; }
+
+/* ===========================
+   ANNOUNCEMENT BAR
+=========================== */
+.announce-bar {
+  background: var(--dark);
+  color: var(--gold-light);
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.announce-bar a { color: var(--gold); font-weight: 600; transition: opacity 0.2s; }
+.announce-bar a:hover { opacity: 0.8; }
+
+/* ===========================
+   NAVIGATION
+=========================== */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(250,248,243,0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  justify-content: space-between;
+}
+
+.nav-logo { display: flex; align-items: center; gap: 14px; }
+
+.nav-logo-icon {
+  width: 48px; height: 48px;
+  background: var(--dark);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.nav-logo-icon svg { width: 28px; height: 28px; }
+.nav-logo-text .brand { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--dark); letter-spacing: 0.5px; display: block; }
+.nav-logo-text .tagline { font-size: 10px; color: var(--text-light); letter-spacing: 2px; text-transform: uppercase; display: block; }
+
+.nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+.nav-links a { font-size: 12px; font-weight: 600; letter-spacing: 1.8px; text-transform: uppercase; color: var(--text-mid); transition: color 0.2s; padding-bottom: 2px; border-bottom: 2px solid transparent; }
+.nav-links a:hover, .nav-links a.active { color: var(--dark); border-bottom-color: var(--gold); }
+.nav-cta { background: var(--dark); color: var(--gold) !important; border: none !important; padding: 12px 24px !important; letter-spacing: 1.5px !important; border-radius: 2px; transition: background 0.2s !important; }
+.nav-cta:hover { background: var(--walnut) !important; color: var(--gold-light) !important; border-bottom-color: transparent !important; }
+
+/* Hamburger (mobile) */
+.nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+.nav-toggle span { display: block; width: 24px; height: 2px; background: var(--dark); transition: all 0.3s; }
+
+@media (max-width: 900px) {
+  .nav-toggle { display: flex; }
+  .nav-links { display: none; position: absolute; top: var(--nav-h); left: 0; right: 0; background: rgba(250,248,243,0.98); border-bottom: 1px solid var(--border); flex-direction: column; padding: 24px; gap: 20px; align-items: flex-start; }
+  .nav-links.open { display: flex; }
+  .nav-cta { align-self: stretch; text-align: center; }
+}
+
+/* ===========================
+   HERO
+=========================== */
+.hero {
+  position: relative;
+  height: calc(100vh - var(--nav-h) - 40px);
+  min-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(30,20,16,0.85) 0%, rgba(92,61,46,0.45) 55%, rgba(30,20,16,0.65) 100%),
+    url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1800&q=80') center/cover no-repeat;
+}
+
+.hero-content { position: relative; z-index: 2; padding: 0 8%; max-width: 780px; }
+.hero-eyebrow { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; }
+.hero-eyebrow::before { content: ''; display: block; width: 40px; height: 1px; background: var(--gold); }
+.hero h1 { font-size: clamp(38px, 6vw, 72px); color: #fff; font-weight: 600; margin-bottom: 24px; line-height: 1.1; }
+.hero h1 em { font-style: italic; color: var(--gold-light); }
+.hero-sub { font-size: 16px; color: rgba(255,255,255,0.78); font-weight: 300; margin-bottom: 44px; max-width: 500px; line-height: 1.9; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.hero-scroll { position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; color: rgba(255,255,255,0.5); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; z-index: 2; }
+.hero-scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent); animation: scrollPulse 2s ease-in-out infinite; }
+@keyframes scrollPulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+
+/* ===========================
+   BUTTONS
+=========================== */
+.btn-primary { background: var(--gold); color: var(--dark); padding: 16px 36px; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border-radius: 2px; transition: all 0.25s; display: inline-block; }
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+.btn-outline { border: 1px solid rgba(255,255,255,0.5); color: #fff; padding: 16px 36px; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; border-radius: 2px; transition: all 0.25s; display: inline-block; }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+.btn-dark { background: var(--dark); color: var(--gold); padding: 16px 36px; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border-radius: 2px; transition: all 0.25s; display: inline-block; }
+.btn-dark:hover { background: var(--walnut); transform: translateY(-1px); }
+.btn-outline-dark { border: 1.5px solid var(--dark); color: var(--dark); padding: 14px 36px; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border-radius: 2px; display: inline-block; transition: all 0.25s; }
+.btn-outline-dark:hover { background: var(--dark); color: var(--gold); }
+
+/* ===========================
+   STAT BAR
+=========================== */
+.stat-bar { background: var(--dark); display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background-color: rgba(200,169,110,0.2); }
+.stat-item { background: var(--dark); text-align: center; padding: 32px 20px; }
+.stat-num { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 6px; }
+.stat-label { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.5); font-weight: 500; }
+
+@media (max-width: 600px) {
+  .stat-bar { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===========================
+   SECTION STRUCTURE
+=========================== */
+.section { padding: var(--section-gap) 7%; }
+.section-light { background: var(--off-white); }
+.section-cream { background: var(--cream); }
+.section-dark { background: var(--dark); }
+
+.section-header { text-align: center; max-width: 640px; margin: 0 auto 64px; }
+.section-eyebrow { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; gap: 12px; }
+.section-eyebrow::before, .section-eyebrow::after { content: ''; display: block; width: 28px; height: 1px; background: var(--gold); }
+.section-header h2 { font-size: clamp(28px, 4vw, 46px); font-weight: 600; color: var(--dark); margin-bottom: 20px; }
+.section-dark .section-header h2 { color: #fff; }
+.section-header p { color: var(--text-mid); font-size: 15px; font-weight: 300; }
+.section-dark .section-header p { color: rgba(255,255,255,0.6); }
+
+/* ===========================
+   INTRO SPLIT
+=========================== */
+.intro-split { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: var(--section-gap) 7%; background: var(--off-white); }
+.intro-img-wrap { position: relative; }
+.intro-img-main { width: 100%; height: 520px; border-radius: 2px; overflow: hidden; }
+.intro-img-main img { height: 100%; }
+.intro-img-badge { position: absolute; bottom: -24px; right: -24px; background: var(--dark); color: var(--gold); width: 120px; height: 120px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 4px solid var(--off-white); }
+.intro-img-badge .num { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; line-height: 1; }
+.intro-img-badge .lbl { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin-top: 2px; }
+.intro-text .eyebrow { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 16px; }
+.intro-text h2 { font-size: clamp(26px, 3.5vw, 44px); color: var(--dark); margin-bottom: 24px; font-weight: 600; }
+.intro-text h2 em { font-style: italic; color: var(--walnut); }
+.intro-text p { color: var(--text-mid); font-size: 15px; font-weight: 300; margin-bottom: 20px; }
+.intro-features { list-style: none; margin: 32px 0 40px; display: flex; flex-direction: column; gap: 14px; }
+.intro-features li { display: flex; align-items: flex-start; gap: 14px; font-size: 14px; color: var(--text-mid); }
+.intro-features li::before { content: ''; display: block; width: 18px; height: 18px; min-width: 18px; background: var(--gold); clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); margin-top: 2px; }
+
+@media (max-width: 900px) {
+  .intro-split { grid-template-columns: 1fr; gap: 60px; }
+  .intro-img-main { height: 360px; }
+  .intro-img-badge { bottom: -20px; right: 20px; }
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border); }
+.service-card { background: var(--off-white); padding: 48px 36px; position: relative; overflow: hidden; transition: background 0.3s; }
+.service-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--gold); transform: scaleX(0); transition: transform 0.3s; transform-origin: left; }
+.service-card:hover::after { transform: scaleX(1); }
+.service-card:hover { background: #fff; }
+.service-icon { width: 52px; height: 52px; background: var(--cream); border-radius: 2px; display: flex; align-items: center; justify-content: center; margin-bottom: 28px; }
+.service-icon svg { width: 26px; height: 26px; stroke: var(--walnut); fill: none; stroke-width: 1.5; }
+.service-card h3 { font-size: 20px; font-weight: 600; color: var(--dark); margin-bottom: 14px; }
+.service-card p { font-size: 14px; color: var(--text-mid); font-weight: 300; line-height: 1.9; }
+.service-link { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--walnut); margin-top: 24px; transition: gap 0.2s; }
+.service-link:hover { gap: 14px; }
+
+@media (max-width: 800px) {
+  .services-grid { grid-template-columns: 1fr; }
+}
+
+/* ===========================
+   GALLERY
+=========================== */
+.gallery-grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-template-rows: 280px 280px; gap: 8px; }
+.gal-item { overflow: hidden; position: relative; border-radius: 2px; cursor: pointer; }
+.gal-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.gal-item:hover img { transform: scale(1.05); }
+.gal-item-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(30,20,16,0.8) 0%, transparent 50%); opacity: 0; transition: opacity 0.3s; display: flex; align-items: flex-end; padding: 24px; }
+.gal-item:hover .gal-item-overlay { opacity: 1; }
+.gal-item-label { color: #fff; font-size: 13px; font-weight: 600; }
+.gal-item-sub { color: var(--gold-light); font-size: 11px; margin-top: 2px; }
+.gal-1 { grid-column: span 5; grid-row: span 2; }
+.gal-2 { grid-column: span 4; }
+.gal-3 { grid-column: span 3; }
+.gal-4 { grid-column: span 3; }
+.gal-5 { grid-column: span 4; }
+.gallery-footer { text-align: center; margin-top: 48px; }
+
+@media (max-width: 800px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .gal-1, .gal-2, .gal-3, .gal-4, .gal-5 { grid-column: span 1; height: 200px; }
+  .gal-1 { grid-column: span 2; height: 260px; }
+}
+
+/* ===========================
+   PROCESS
+=========================== */
+.process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: rgba(200,169,110,0.15); }
+.process-step { background: var(--dark); padding: 48px 32px; position: relative; }
+.step-num { font-family: 'Playfair Display', serif; font-size: 72px; font-weight: 700; color: rgba(200,169,110,0.1); line-height: 1; position: absolute; top: 20px; right: 24px; pointer-events: none; }
+.step-icon { width: 44px; height: 44px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; }
+.step-icon svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+.process-step h3 { font-size: 18px; color: #fff; margin-bottom: 12px; font-weight: 600; }
+.process-step p { font-size: 13px; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.8; }
+
+@media (max-width: 800px) {
+  .process-steps { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 500px) {
+  .process-steps { grid-template-columns: 1fr; }
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+.about-split { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: var(--section-gap) 7%; background: var(--cream); }
+.about-text .eyebrow { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 16px; }
+.about-text h2 { font-size: clamp(26px, 3.5vw, 44px); color: var(--dark); margin-bottom: 24px; font-weight: 600; }
+.about-text p { color: var(--text-mid); font-size: 15px; font-weight: 300; margin-bottom: 18px; line-height: 1.9; }
+.about-quote { border-left: 3px solid var(--gold); padding-left: 24px; margin: 32px 0; }
+.about-quote blockquote { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-style: italic; color: var(--walnut); line-height: 1.6; }
+.about-sig { font-size: 13px; color: var(--text-light); margin-top: 10px; font-weight: 500; letter-spacing: 1px; }
+.about-img-stack { position: relative; height: 560px; }
+.about-img-main { position: absolute; top: 0; left: 0; right: 60px; height: 440px; overflow: hidden; border-radius: 2px; }
+.about-img-main img { height: 100%; }
+.about-img-secondary { position: absolute; bottom: 0; right: 0; width: 200px; height: 260px; overflow: hidden; border-radius: 2px; border: 6px solid var(--cream); }
+.about-img-secondary img { height: 100%; }
+.about-credentials { display: flex; gap: 32px; margin-top: 32px; padding-top: 32px; border-top: 1px solid var(--border); }
+.credential .val { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: var(--dark); }
+.credential .lbl { font-size: 11px; color: var(--text-light); letter-spacing: 1px; text-transform: uppercase; }
+
+@media (max-width: 900px) {
+  .about-split { grid-template-columns: 1fr; gap: 60px; }
+  .about-img-stack { height: 320px; }
+  .about-img-main { right: 0; height: 320px; position: relative; }
+  .about-img-secondary { display: none; }
+}
+
+/* ===========================
+   TESTIMONIALS
+=========================== */
+.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.testimonial-card { background: #fff; padding: 40px 36px; border-radius: 2px; border: 1px solid var(--border); position: relative; }
+.testimonial-card::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: 80px; color: var(--gold); line-height: 1; position: absolute; top: 16px; left: 28px; opacity: 0.3; }
+.stars { display: flex; gap: 4px; margin-bottom: 20px; }
+.stars span { color: var(--gold); font-size: 14px; }
+.testimonial-card blockquote { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; color: var(--text); line-height: 1.75; margin-bottom: 28px; }
+.testimonial-author { display: flex; align-items: center; gap: 14px; border-top: 1px solid var(--border); padding-top: 20px; }
+.author-avatar { width: 46px; height: 46px; border-radius: 50%; overflow: hidden; flex-shrink: 0; background: var(--cream); }
+.author-avatar img { height: 100%; }
+.author-info .name { font-size: 13px; font-weight: 700; color: var(--dark); letter-spacing: 0.5px; }
+.author-info .piece { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+
+@media (max-width: 900px) {
+  .testimonials-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
+}
+
+/* ===========================
+   COMMISSION BANNER
+=========================== */
+.commission-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, rgba(30,20,16,0.95) 40%, rgba(92,61,46,0.7) 100%),
+    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80') center/cover no-repeat;
+  padding: 100px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.commission-text h2 { font-size: clamp(30px, 4vw, 52px); color: #fff; margin-bottom: 20px; font-weight: 600; }
+.commission-text h2 em { color: var(--gold-light); font-style: italic; }
+.commission-text p { color: rgba(255,255,255,0.65); font-size: 15px; font-weight: 300; line-height: 1.9; margin-bottom: 36px; }
+.commission-features { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+.commission-features li { display: flex; align-items: center; gap: 14px; color: rgba(255,255,255,0.75); font-size: 14px; font-weight: 300; }
+.commission-features li .check { width: 24px; height: 24px; min-width: 24px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 12px; }
+
+@media (max-width: 800px) {
+  .commission-banner { grid-template-columns: 1fr; gap: 40px; padding: 72px 7%; }
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+.contact-split { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; padding: var(--section-gap) 7%; background: var(--off-white); }
+.contact-info .eyebrow { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 16px; }
+.contact-info h2 { font-size: clamp(26px, 3vw, 40px); color: var(--dark); margin-bottom: 20px; font-weight: 600; }
+.contact-info > p { color: var(--text-mid); font-size: 14px; font-weight: 300; line-height: 1.9; margin-bottom: 40px; }
+.contact-details { display: flex; flex-direction: column; gap: 24px; }
+.contact-detail { display: flex; align-items: flex-start; gap: 16px; }
+.contact-detail-icon { width: 40px; height: 40px; min-width: 40px; background: var(--cream); border-radius: 2px; display: flex; align-items: center; justify-content: center; }
+.contact-detail-icon svg { width: 18px; height: 18px; stroke: var(--walnut); fill: none; stroke-width: 1.5; }
+.contact-detail-text .lbl { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-light); font-weight: 600; margin-bottom: 4px; }
+.contact-detail-text .val { font-size: 15px; font-weight: 500; color: var(--dark); }
+.contact-detail-text .val a { color: var(--walnut); transition: color 0.2s; }
+.contact-detail-text .val a:hover { color: var(--dark); }
+.contact-social { display: flex; gap: 12px; margin-top: 40px; }
+.social-btn { width: 40px; height: 40px; border: 1px solid var(--border); border-radius: 2px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; color: var(--text-mid); }
+.social-btn:hover { background: var(--dark); border-color: var(--dark); color: var(--gold); }
+
+/* Form */
+.contact-form-wrap { background: #fff; border: 1px solid var(--border); border-radius: 4px; padding: 48px; }
+.contact-form-wrap h3 { font-size: 22px; color: var(--dark); margin-bottom: 8px; font-weight: 600; }
+.contact-form-wrap .form-sub { font-size: 13px; color: var(--text-light); font-weight: 300; margin-bottom: 36px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.form-group label { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-mid); }
+.form-group input, .form-group select, .form-group textarea { border: 1px solid var(--border); border-radius: 2px; padding: 12px 14px; font-size: 14px; font-family: 'Montserrat', sans-serif; color: var(--text); background: var(--off-white); transition: border-color 0.2s; outline: none; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--walnut); background: #fff; }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.service-checks { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.service-check { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-mid); cursor: pointer; }
+.service-check input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--walnut); cursor: pointer; }
+.form-note { font-size: 11px; color: var(--text-light); margin-top: 12px; text-align: center; }
+.btn-submit { width: 100%; background: var(--dark); color: var(--gold); padding: 16px; font-size: 12px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; border-radius: 2px; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif; transition: background 0.25s; margin-top: 8px; }
+.btn-submit:hover { background: var(--walnut); }
+
+/* Success message */
+.form-success { display: none; text-align: center; padding: 40px 20px; }
+.form-success h3 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--dark); margin-bottom: 12px; }
+.form-success p { color: var(--text-mid); font-size: 14px; font-weight: 300; line-height: 1.8; }
+
+@media (max-width: 900px) {
+  .contact-split { grid-template-columns: 1fr; gap: 60px; }
+  .contact-form-wrap { padding: 32px 24px; }
+  .form-row { grid-template-columns: 1fr; }
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer { background: var(--dark); padding: 72px 7% 32px; }
+.footer-main { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1.2fr; gap: 56px; padding-bottom: 56px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.footer-brand .logo-wrap { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.footer-brand .logo-icon { width: 44px; height: 44px; background: rgba(200,169,110,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(200,169,110,0.3); }
+.footer-brand .brand-name { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: #fff; }
+.footer-brand p { font-size: 13px; color: rgba(255,255,255,0.45); font-weight: 300; line-height: 1.9; margin-bottom: 24px; }
+.footer-social { display: flex; gap: 10px; }
+.footer-social a { width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.12); border-radius: 2px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.45); transition: all 0.2s; }
+.footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+.footer-col h4 { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col ul li a { font-size: 13px; color: rgba(255,255,255,0.45); font-weight: 300; transition: color 0.2s; }
+.footer-col ul li a:hover { color: #fff; }
+.footer-contact p { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: rgba(255,255,255,0.5); font-weight: 300; margin-bottom: 14px; line-height: 1.6; }
+.footer-contact p strong { color: rgba(255,255,255,0.8); font-weight: 500; font-size: 12px; letter-spacing: 0.5px; display: block; margin-bottom: 2px; }
+.footer-contact a { color: rgba(255,255,255,0.5); transition: color 0.2s; }
+.footer-contact a:hover { color: var(--gold); }
+.footer-bottom { padding-top: 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.3); font-weight: 300; }
+.footer-bottom-links { display: flex; gap: 24px; }
+.footer-bottom-links a { font-size: 12px; color: rgba(255,255,255,0.3); transition: color 0.2s; }
+.footer-bottom-links a:hover { color: rgba(255,255,255,0.7); }
+
+@media (max-width: 900px) {
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+@media (max-width: 500px) {
+  .footer-main { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar">
+  Now serving <a href="#contact">Virginia Beach &amp; Hampton Roads</a> &nbsp;·&nbsp; Free consultations &nbsp;·&nbsp; Call <a href="tel:+17575550182">(757) 555-0182</a>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="nav">
+  <a href="/" class="nav-logo" aria-label="Wally's Woodworking Home">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="16" cy="16" r="13" stroke="#C8A96E" stroke-width="1.5" fill="none"/>
+        <path d="M16 7 L16 25 M9 13 L23 13 M9 19 L23 19" stroke="#C8A96E" stroke-width="1.5" fill="none"/>
+        <rect x="11" y="14.5" width="10" height="3" fill="#C8A96E" rx="0.5"/>
+      </svg>
+    </div>
+    <div class="nav-logo-text">
+      <span class="brand">Wally's Woodworking</span>
+      <span class="tagline">Handcrafted · Virginia Beach</span>
+    </div>
+  </a>
+
+  <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-label="Welcome to Wally's Woodworking">
+  <div class="hero-bg" role="img" aria-label="Close-up of handcrafted wood furniture"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Bespoke Furniture &amp; Home Décor</div>
+    <h1>Where <em>Fine Wood</em><br>Meets Fine Living</h1>
+    <p class="hero-sub">Custom furniture and handcrafted décor built to order, built to last — and built to tell the story of your home.</p>
+    <div class="hero-actions">
+      <a href="#gallery" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-outline">Commission a Piece</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- STAT BAR -->
+<div class="stat-bar" aria-label="Quick facts about Wally's Woodworking">
+  <div class="stat-item"><div class="stat-num">150+</div><div class="stat-label">Pieces Crafted</div></div>
+  <div class="stat-item"><div class="stat-num">12+</div><div class="stat-label">Years Experience</div></div>
+  <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Custom Made</div></div>
+  <div class="stat-item"><div class="stat-num">5★</div><div class="stat-label">Client Reviews</div></div>
+</div>
+
+<!-- INTRO SPLIT -->
+<div class="intro-split">
+  <div class="intro-img-wrap">
+    <div class="intro-img-main">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" alt="Custom floating shelf with walnut finish installed in a living room" loading="lazy">
+    </div>
+    <div class="intro-img-badge" aria-hidden="true">
+      <span class="num">VA</span>
+      <span class="lbl">Beach</span>
+    </div>
+  </div>
+  <div class="intro-text">
+    <div class="eyebrow">About the Craft</div>
+    <h2>Every Piece Tells<br><em>Your Story</em></h2>
+    <p>I'm Wally — a Virginia Beach craftsman who believes a piece of furniture should be more than functional. It should reflect who you are, fit the way you live, and get more beautiful with every passing year.</p>
+    <p>From custom dining tables to hand-turned décor, each project begins with a conversation and ends with something genuinely one-of-a-kind.</p>
+    <ul class="intro-features">
+      <li>Customized designs shaped around your exact vision and space</li>
+      <li>Precision joinery and hand-selected hardwoods for lasting durability</li>
+      <li>Expert upgrades, restorations, and repairs to revitalize existing pieces</li>
+      <li>Transparent pricing — you'll always know what to expect</li>
+    </ul>
+    <a href="#about" class="btn-dark">Meet Wally</a>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section section-light" id="services">
+  <div class="section-header">
+    <div class="section-eyebrow">What I Do</div>
+    <h2>Services Built Around Your Home</h2>
+    <p>Whether you're starting from scratch or breathing new life into a beloved space, I offer the craftsmanship to make it happen.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="13" rx="1"/><path d="M16 7V5a2 2 0 00-4 0v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
+      <h3>Custom Furniture</h3>
+      <p>Tables, cabinets, shelving, desks, and beds — designed to your exact dimensions, wood preference, and finish. Every piece is built by hand, from first plank to final coat.</p>
+      <a href="#contact" class="service-link">Commission a piece <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <h3>Home Décor &amp; Accents</h3>
+      <p>Charcuterie boards, serving trays, cutting boards, candle holders, and small decorative pieces — handcrafted gifts and home accents that make any room feel complete.</p>
+      <a href="#gallery" class="service-link">Browse the shop <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+      <h3>Repairs &amp; Restorations</h3>
+      <p>Got a piece with sentimental value that's seen better days? I restore heirloom furniture and transform dated pieces into things your grandchildren will fight over someday.</p>
+      <a href="#contact" class="service-link">Get a repair quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section-cream" id="gallery">
+  <div class="section-header">
+    <div class="section-eyebrow">The Work</div>
+    <h2>Recent Pieces</h2>
+    <p>A selection of custom furniture and décor — each one built to a specific vision, for a specific home.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gal-item gal-1">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=75" alt="Custom white entertainment cabinet with open shelving" loading="lazy">
+      <div class="gal-item-overlay"><div><div class="gal-item-label">Entertainment Cabinet</div><div class="gal-item-sub">White oak · Custom dimensions</div></div></div>
+    </div>
+    <div class="gal-item gal-2">
+      <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=75" alt="Floating walnut shelf in a styled living room" loading="lazy">
+      <div class="gal-item-overlay"><div><div class="gal-item-label">Floating Shelf System</div><div class="gal-item-sub">Walnut · 72" span</div></div></div>
+    </div>
+    <div class="gal-item gal-3">
+      <img src="https://images.unsplash.com/photo-1532372576444-dda954194ad0?w=600&q=75" alt="Live-edge black walnut serving board" loading="lazy">
+      <div class="gal-item-overlay"><div><div class="gal-item-label">Live-Edge Serving Board</div><div class="gal-item-sub">Black walnut</div></div></div>
+    </div>
+    <div class="gal-item gal-4">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75" alt="Mid-century side table with hairpin legs" loading="lazy">
+      <div class="gal-item-overlay"><div><div class="gal-item-label">Mid-Century Side Table</div><div class="gal-item-sub">Cherry &amp; steel hairpin legs</div></div></div>
+    </div>
+    <div class="gal-item gal-5">
+      <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=75" alt="White mudroom storage bench with cubbies" loading="lazy">
+      <div class="gal-item-overlay"><div><div class="gal-item-label">Mudroom Storage Bench</div><div class="gal-item-sub">Painted MDF + pine</div></div></div>
+    </div>
+  </div>
+  <div class="gallery-footer">
+    <a href="mailto:wally@wallyswoodworking.com?subject=Gallery%20Inquiry" class="btn-outline-dark">See More — Contact Me for Full Portfolio</a>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section section-dark" style="padding-top: 0; padding-bottom: 0;" id="process">
+  <div style="padding: var(--section-gap) 7% 48px;">
+    <div class="section-header">
+      <div class="section-eyebrow">How It Works</div>
+      <h2>From Idea to Heirloom</h2>
+      <p>A simple, transparent process so you always know where your piece stands.</p>
+    </div>
+  </div>
+  <div class="process-steps">
+    <div class="process-step"><div class="step-num" aria-hidden="true">01</div><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h3>Free Consultation</h3><p>We talk through your vision, your space, your budget, and your timeline. No obligation — just an honest conversation about what's possible.</p></div>
+    <div class="process-step"><div class="step-num" aria-hidden="true">02</div><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><h3>Design &amp; Quote</h3><p>I sketch the design and provide a detailed written quote. You'll know the exact cost, materials, and expected completion date before a single board is cut.</p></div>
+    <div class="process-step"><div class="step-num" aria-hidden="true">03</div><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h3>Crafting Your Piece</h3><p>I build your piece in my Virginia Beach workshop, selecting each board for grain and color. Progress photos are sent at key milestones.</p></div>
+    <div class="process-step"><div class="step-num" aria-hidden="true">04</div><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div><h3>Delivery &amp; Installation</h3><p>I personally deliver and install your piece, making sure it's exactly right. Your satisfaction is guaranteed — if anything isn't perfect, I'll make it right.</p></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<div class="about-split" id="about">
+  <div class="about-text">
+    <div class="eyebrow">The Craftsman</div>
+    <h2>Hi, I'm Wally.<br>I Build Things That Last.</h2>
+    <p>I've been working with wood my whole life — first as a hobby, then as a calling. What started as weekend projects in my garage grew into a full custom workshop serving homeowners across Virginia Beach and the Hampton Roads area.</p>
+    <p>I'm a one-man operation by choice. That means every piece that carries my name was built by my hands, to my standards. No outsourcing, no shortcuts.</p>
+    <div class="about-quote">
+      <blockquote>"I don't build furniture. I build the thing you'll point to when someone visits your home and says, 'Where did you get that?'"</blockquote>
+      <div class="about-sig">— Wally Wallace, Founder</div>
+    </div>
+    <div class="about-credentials">
+      <div class="credential"><span class="val">12+</span><span class="lbl">Years in craft</span></div>
+      <div class="credential"><span class="val">150+</span><span class="lbl">Pieces built</span></div>
+      <div class="credential"><span class="val">VA</span><span class="lbl">Beach based</span></div>
+    </div>
+  </div>
+  <div class="about-img-stack">
+    <div class="about-img-main">
+      <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=900&q=80" alt="Wally working in his Virginia Beach woodworking workshop" loading="lazy">
+    </div>
+    <div class="about-img-secondary">
+      <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=400&q=75" alt="Close-up detail of hand-cut wood joinery" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="section section-light">
+  <div class="section-header">
+    <div class="section-eyebrow">Happy Customers</div>
+    <h2>What People Are Saying</h2>
+    <p>Every review here represents a real piece built for a real home in Hampton Roads.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+      <blockquote>"I'm on cloud nine with this entertainment and storage cabinet. It's so perfect and maximizes our space. Wally was easy to work with from start to finish."</blockquote>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background: linear-gradient(135deg, #E8D5A8, #C8A96E);"></div>
+        <div class="author-info"><div class="name">Kerri-Jean W.</div><div class="piece">Entertainment Cabinet · Virginia Beach</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+      <blockquote>"Could not be happier with my experience buying a custom desk from Wally. The result was better than what I had originally envisioned. I use it every single day."</blockquote>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background: linear-gradient(135deg, #7A5444, #5C3D2E);"></div>
+        <div class="author-info"><div class="name">Jeff S.</div><div class="piece">Custom Home Office Desk · Chesapeake</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+      <blockquote>"Absolutely love the way you make your furniture — I just know it'll last me a lifetime of enjoyment. The walnut dining table is the centerpiece of our home."</blockquote>
+      <div class="testimonial-author">
+        <div class="author-avatar" style="background: linear-gradient(135deg, #C8A96E, #8B6347);"></div>
+        <div class="author-info"><div class="name">Kim B.</div><div class="piece">Live-Edge Dining Table · Norfolk</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMISSION BANNER -->
+<div class="commission-banner">
+  <div class="commission-text">
+    <h2>Have a Piece<br>in <em>Mind?</em></h2>
+    <p>Whether you have a crystal-clear vision or just a rough idea, let's talk. A free 30-minute consultation is all it takes to get started.</p>
+    <a href="#contact" class="btn-primary">Schedule a Free Consultation</a>
+  </div>
+  <ul class="commission-features" aria-label="What you get">
+    <li><span class="check" aria-hidden="true">✓</span>No-commitment, no-pressure initial consultation</li>
+    <li><span class="check" aria-hidden="true">✓</span>Written quote provided before any work begins</li>
+    <li><span class="check" aria-hidden="true">✓</span>Built in Virginia Beach — delivered to your door</li>
+    <li><span class="check" aria-hidden="true">✓</span>Satisfaction guaranteed on every piece</li>
+    <li><span class="check" aria-hidden="true">✓</span>Progress updates throughout the build</li>
+    <li><span class="check" aria-hidden="true">✓</span>Solid hardwoods, premium finishes, built to last</li>
+  </ul>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-split" id="contact">
+  <div class="contact-info">
+    <div class="eyebrow">Get in Touch</div>
+    <h2>Let's Start a Conversation</h2>
+    <p>Have a project in mind or just want to explore the possibilities? Reach out any way that works for you — I typically respond within 24 hours.</p>
+    <div class="contact-details">
+      <div class="contact-detail">
+        <div class="contact-detail-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg></div>
+        <div class="contact-detail-text"><div class="lbl">Phone</div><div class="val"><a href="tel:+17575550182">(757) 555-0182</a></div></div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div class="contact-detail-text"><div class="lbl">Email</div><div class="val"><a href="mailto:wally@wallyswoodworking.com">wally@wallyswoodworking.com</a></div></div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="contact-detail-text"><div class="lbl">Location</div><div class="val">Virginia Beach, VA<br><span style="font-size:12px;color:var(--text-light);font-weight:400;">Serving all of Hampton Roads</span></div></div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="contact-detail-text"><div class="lbl">Response Time</div><div class="val">Within 24 hours</div></div>
+      </div>
+    </div>
+    <div class="contact-social">
+      <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- NETLIFY FORM (data-netlify="true" makes this work automatically) -->
+  <div class="contact-form-wrap">
+    <h3>Request a Free Consultation</h3>
+    <p class="form-sub">Tell me a little about your project and I'll be in touch within 24 hours.</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+      <!-- Netlify hidden field — required -->
+      <input type="hidden" name="form-name" value="contact">
+      <!-- Honeypot anti-spam -->
+      <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Emily" required>
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Smith" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone <span style="font-weight:400;text-transform:none;letter-spacing:0;font-size:10px;color:var(--text-light)">(Optional — for faster follow-up)</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="(757) 555-0000">
+      </div>
+      <div class="form-group">
+        <label>What are you interested in? *</label>
+        <div class="service-checks">
+          <label class="service-check"><input type="checkbox" name="service[]" value="Custom Furniture"> Custom Furniture</label>
+          <label class="service-check"><input type="checkbox" name="service[]" value="Home Decor"> Home Décor / Shop Item</label>
+          <label class="service-check"><input type="checkbox" name="service[]" value="Home Remodeling"> Home Remodeling</label>
+          <label class="service-check"><input type="checkbox" name="service[]" value="Repair Restoration"> Repair / Restoration</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="area">Area of your home <span style="font-weight:400;text-transform:none;letter-spacing:0;font-size:10px;color:var(--text-light)">(optional)</span></label>
+        <select id="area" name="area">
+          <option value="">Select a room...</option>
+          <option>Living Room</option>
+          <option>Dining Room</option>
+          <option>Bedroom</option>
+          <option>Home Office</option>
+          <option>Kitchen</option>
+          <option>Entryway / Mudroom</option>
+          <option>Outdoor / Patio</option>
+          <option>Other / Not sure</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Tell me about your project *</label>
+        <textarea id="message" name="message" placeholder="Describe what you have in mind — dimensions, style, wood type, budget, timeline, or anything else that's helpful..." required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send My Request →</button>
+      <p class="form-note">No spam, no pressure — just a conversation about your project.</p>
+    </form>
+
+    <!-- Success message shown after submission -->
+    <div class="form-success" id="form-success">
+      <div style="font-size:48px;margin-bottom:16px;">🪵</div>
+      <h3>Message Received!</h3>
+      <p>Thanks for reaching out, I'll be in touch within 24 hours to talk about your project.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="logo-wrap">
+        <div class="logo-icon">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="13" stroke="#C8A96E" stroke-width="1.5" fill="none"/>
+            <path d="M16 7 L16 25 M9 13 L23 13 M9 19 L23 19" stroke="#C8A96E" stroke-width="1.5" fill="none"/>
+            <rect x="11" y="14.5" width="10" height="3" fill="#C8A96E" rx="0.5"/>
+          </svg>
+        </div>
+        <span class="brand-name">Wally's Woodworking</span>
+      </div>
+      <p>Handcrafted custom furniture and home décor, built one piece at a time in Virginia Beach, VA. Every order is made by hand, to order — never mass-produced.</p>
+      <div class="footer-social">
+        <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Wally</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Custom Furniture</a></li>
+        <li><a href="#services">Home Décor &amp; Accents</a></li>
+        <li><a href="#services">Built-Ins &amp; Cabinetry</a></li>
+        <li><a href="#services">Repairs &amp; Restorations</a></li>
+        <li><a href="#contact">Free Consultation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-contact">
+      <h4>Contact</h4>
+      <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:2px" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg><span><strong>Phone</strong><a href="tel:+17575550182">(757) 555-0182</a></span></p>
+      <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:2px" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><strong>Email</strong><a href="mailto:wally@wallyswoodworking.com">wally@wallyswoodworking.com</a></span></p>
+      <p><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:2px" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span><strong>Location</strong>Virginia Beach, VA<br>Serving all Hampton Roads</span></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Wally's Woodworking. All rights reserved. Proudly handcrafted in Virginia Beach, VA.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Active nav on scroll
+const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+const sections = ['gallery','services','process','about','contact'];
+window.addEventListener('scroll', () => {
+  const pos = window.scrollY + 120;
+  let current = '';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && el.offsetTop <= pos) current = id;
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    const href = link.getAttribute('href');
+    if (href === '#' + current || (current === '' && href === '#')) link.classList.add('active');
+  });
+});
+
+// Close mobile nav on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open'));
+});
+
+// Netlify form success handling
+const form = document.getElementById('contact-form');
+const success = document.getElementById('form-success');
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    try {
+      await fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(data).toString() });
+      form.style.display = 'none';
+      success.style.display = 'block';
+    } catch(err) {
+      alert('Something went wrong. Please email wally@wallyswoodworking.com directly.');
+    }
+  });
+}
+</script>
+</body>
+</html>
