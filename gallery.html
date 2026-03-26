@@ -287,26 +287,74 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // Gallery filter
-const filterBtns = document.querySelectorAll('.filter-btn');
-const galleryItems = document.querySelectorAll('.gal-item[data-category]');
-
-filterBtns.forEach(btn => {
+document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const filter = btn.getAttribute('data-filter');
-
-    filterBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+    document.querySelectorAll('.filter-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
     btn.classList.add('active');
-    btn.setAttribute('aria-selected', 'true');
-
-    galleryItems.forEach(item => {
-      if (filter === 'all' || item.getAttribute('data-category') === filter) {
-        item.classList.remove('hidden');
-      } else {
-        item.classList.add('hidden');
-      }
+    btn.setAttribute('aria-selected','true');
+    document.querySelectorAll('.gal-item[data-category]').forEach(item => {
+      item.classList.toggle('hidden', filter !== 'all' && item.getAttribute('data-category') !== filter);
     });
   });
 });
+</script>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button id="lb-close">&times;</button>
+  <figure id="lb-content">
+    <img id="lb-img" src="" alt="">
+    <figcaption id="lb-caption">
+      <div id="lb-label"></div>
+      <div id="lb-sub"></div>
+    </figcaption>
+  </figure>
+</div>
+
+<style>
+#lightbox{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(20,12,8,.92);z-index:9999;display:none;align-items:center;justify-content:center;padding:20px;}
+#lightbox.open{display:flex;}
+#lb-content{margin:0;display:flex;flex-direction:column;align-items:center;gap:14px;max-width:90vw;max-height:90vh;}
+#lb-img{max-width:90vw;max-height:78vh;width:auto;height:auto;object-fit:contain;display:block;border-radius:2px;}
+#lb-caption{text-align:center;}
+#lb-label{color:#fff;font-size:15px;font-weight:600;}
+#lb-sub{color:#C8A96E;font-size:12px;margin-top:4px;letter-spacing:1px;}
+#lb-close{position:fixed;top:16px;right:20px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:28px;width:44px;height:44px;border-radius:2px;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;}
+#lb-close:hover{background:rgba(255,255,255,.2);}
+</style>
+
+<script>
+(function(){
+  var lb    = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lb-img');
+  var lbLbl = document.getElementById('lb-label');
+  var lbSub = document.getElementById('lb-sub');
+
+  document.querySelectorAll('.gal-item').forEach(function(item){
+    item.style.cursor = 'pointer';
+    item.addEventListener('click', function(){
+      var img = item.querySelector('img');
+      var lbl = item.querySelector('.gal-item-label');
+      var sub = item.querySelector('.gal-item-sub');
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbLbl.textContent = lbl ? lbl.textContent : '';
+      lbSub.textContent = sub ? sub.textContent : '';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  document.getElementById('lb-close').addEventListener('click', close);
+  lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+
+  function close(){
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+})();
 </script>
 </body>
 </html>
