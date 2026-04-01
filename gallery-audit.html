@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery Audit — Wally's Woodworking</title>
+<script src="gallery-data.js"></script>
+<style>
+  body { font-family: sans-serif; background: #f5f5f5; padding: 24px; margin: 0; }
+  h1 { font-size: 20px; margin-bottom: 4px; }
+  p { color: #666; margin-bottom: 24px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+  .card { background: #fff; border: 1px solid #ddd; border-radius: 6px; overflow: hidden; }
+  .card img { width: 100%; height: 200px; object-fit: cover; display: block; background: #eee; }
+  .card .info { padding: 12px; }
+  .card .filename { font-size: 11px; font-weight: 700; color: #999; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 4px; }
+  .card .label { font-size: 14px; font-weight: 600; color: #222; margin-bottom: 2px; }
+  .card .sub { font-size: 12px; color: #666; margin-bottom: 6px; }
+  .card .cat { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; padding: 2px 8px; border-radius: 20px; }
+  .cat.furniture { background: #dbeafe; color: #1d4ed8; }
+  .cat.decor     { background: #fef9c3; color: #854d0e; }
+  .cat.specialty { background: #dcfce7; color: #166534; }
+  .broken { border: 2px solid red; }
+  .broken .filename { color: red; }
+</style>
+</head>
+<body>
+<h1>Gallery Audit — Wally's Woodworking</h1>
+<p>Use this page to visually verify every photo has the correct label, sub, and category. Red border = image file not found.<br>
+To fix: open <strong>gallery-data.js</strong> and update the entry, then refresh this page.</p>
+<div class="grid" id="grid"></div>
+<script>
+var grid = document.getElementById('grid');
+window.GALLERY_DATA.items.forEach(function(item) {
+  var card = document.createElement('div');
+  card.className = 'card';
+
+  var img = document.createElement('img');
+  img.src = 'images/gallery/' + item.file;
+  img.alt = item.label;
+  img.onerror = function() {
+    card.classList.add('broken');
+    img.style.background = '#fee2e2';
+    img.style.display = 'block';
+    img.style.lineHeight = '200px';
+    img.style.textAlign = 'center';
+    img.alt = '⚠ File not found: ' + item.file;
+  };
+
+  var info = document.createElement('div');
+  info.className = 'info';
+  info.innerHTML =
+    '<div class="filename">' + item.file + '</div>' +
+    '<div class="label">' + item.label + '</div>' +
+    '<div class="sub">' + item.sub + '</div>' +
+    '<span class="cat ' + item.category + '">' + item.category + '</span>';
+
+  card.appendChild(img);
+  card.appendChild(info);
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>

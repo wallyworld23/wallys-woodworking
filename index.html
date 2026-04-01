@@ -325,73 +325,8 @@
           specific vision, for a specific home.
         </p>
       </div>
-      <div class="gallery-grid">
-        <div class="gal-item gal-1">
-          <img
-            src="images/gallery/furniture-01.jpg"
-            alt="Custom under-stair built-in shelves"
-            loading="lazy"
-          />
-          <div class="gal-item-overlay">
-            <div>
-              <div class="gal-item-label">Custom Under-Stair Built-In Shelves</div>
-              <div class="gal-item-sub">Painted poplar &amp; pine · Built-in storage · Virginia Beach</div>
-            </div>
-          </div>
-        </div>
-        <div class="gal-item gal-2">
-          <img
-            src="images/gallery/furniture-02.jpg"
-            alt="Floating walnut wall display ledges"
-            loading="lazy"
-          />
-          <div class="gal-item-overlay">
-            <div>
-              <div class="gal-item-label">Floating Walnut Wall Display Ledges</div>
-              <div class="gal-item-sub">Black walnut · Gallery wall shelving · Virginia Beach</div>
-            </div>
-          </div>
-        </div>
-        <div class="gal-item gal-3">
-          <img
-            src="images/gallery/decor-01.jpg"
-            alt="Hand-painted wood American flag wall art"
-            loading="lazy"
-          />
-          <div class="gal-item-overlay">
-            <div>
-              <div class="gal-item-label">Hand-Painted Wood American Flag Wall Art</div>
-              <div class="gal-item-sub">Carved &amp; painted pine · 3D relief · Virginia Beach</div>
-            </div>
-          </div>
-        </div>
-        <div class="gal-item gal-4">
-          <img
-            src="images/gallery/furniture-03.jpg"
-            alt="Mid-century modern dining table"
-            loading="lazy"
-          />
-          <div class="gal-item-overlay">
-            <div>
-              <div class="gal-item-label">Mid-Century Modern Dining Table</div>
-              <div class="gal-item-sub">Dark walnut · Angled trestle base · Virginia Beach</div>
-            </div>
-          </div>
-        </div>
-        <div class="gal-item gal-5">
-          <img
-            src="images/gallery/furniture-04.jpg"
-            alt="Custom floating kitchen bar shelf"
-            loading="lazy"
-          />
-          <div class="gal-item-overlay">
-            <div>
-              <div class="gal-item-label">Custom Floating Kitchen Bar Shelf</div>
-              <div class="gal-item-sub">Live-edge walnut · Wall-mounted · Virginia Beach</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Recent Pieces grid — pulled from gallery-data.js (first 5 items) -->
+      <div class="gallery-grid" id="home-gallery-grid"></div>
       <div class="gallery-footer">
         <a href="gallery.html" class="btn-outline-dark"
           >See More — View Full Gallery</a
@@ -1095,6 +1030,27 @@
         </div>
       </div>
     </footer>
+
+    <!-- Gallery data — single source of truth for all photo labels -->
+    <script src="gallery-data.js"></script>
+    <script>
+    // Render Recent Pieces from gallery-data.js (first 5 items)
+    (function() {
+      var grid = document.getElementById('home-gallery-grid');
+      var classes = ['gal-1','gal-2','gal-3','gal-4','gal-5'];
+      window.GALLERY_DATA.items.slice(0, 5).forEach(function(item, i) {
+        var div = document.createElement('div');
+        div.className = 'gal-item ' + classes[i];
+        div.innerHTML =
+          '<img src="images/gallery/' + item.file + '" alt="' + item.label + '" loading="lazy">' +
+          '<div class="gal-item-overlay"><div>' +
+          '<div class="gal-item-label">' + item.label + '</div>' +
+          '<div class="gal-item-sub">' + item.sub + '</div>' +
+          '</div></div>';
+        grid.appendChild(div);
+      });
+    })();
+    </script>
 
     <script>
       // Active nav on scroll
