@@ -117,6 +117,108 @@ window.GALLERY_DATA = {
       "category": "specialty",
       "label": "Custom Stair Railing",
       "sub": "Painted Poplar · Chippendale Pattern · Moyock, NC"
+    },
+    {
+      "file": "decor-12.jpg",
+      "category": "decor",
+      "label": "End-Grain Cutting Board",
+      "sub": "Dark Walnut · Juice Groove & Finger Holds · Virginia Beach"
+    },
+    {
+      "file": "decor-13.jpg",
+      "category": "decor",
+      "label": "Walnut Serving Board with Cutout Handles",
+      "sub": "Black Walnut & Maple · Raised Feet · Virginia Beach"
+    },
+    {
+      "file": "decor-14.jpg",
+      "category": "decor",
+      "label": "Serving Board with Iron Handles",
+      "sub": "Walnut · Metal Loop Handles · Virginia Beach"
+    },
+    {
+      "file": "decor-15.jpg",
+      "category": "decor",
+      "label": "Round Walnut & Maple Cheese Board",
+      "sub": "Black Walnut & Maple · Paddle Handle · Virginia Beach"
+    },
+    {
+      "file": "decor-16.jpg",
+      "category": "decor",
+      "label": "Personalized Name Coat Hook Boards",
+      "sub": "Reclaimed Pine · Heirloom · Custom Engraving · Maryland"
+    },
+    {
+      "file": "decor-17.jpg",
+      "category": "decor",
+      "label": "Desktop Organizer",
+      "sub": "Bubinga & Maple · Pen Holder · Virginia Beach"
+    },
+    {
+      "file": "furniture-05.jpg",
+      "category": "furniture",
+      "label": "Custom Built-In Dry Bar & Floating Shelves",
+      "sub": "Painted Shaker · Walnut Butcher Block Top · Baltimore, MD"
+    },
+    {
+      "file": "furniture-06.jpg",
+      "category": "furniture",
+      "label": "Mid-Century Walnut Ladder Bookcase",
+      "sub": "Black Walnut · Leaning Bookshelf · Virginia Beach"
+    },
+    {
+      "file": "furniture-07.jpg",
+      "category": "furniture",
+      "label": "Mid-Century Nightstand with Drawer",
+      "sub": "Walnut & Birdseye Maple · Single Drawer · Virginia Beach"
+    },
+    {
+      "file": "furniture-08.jpg",
+      "category": "furniture",
+      "label": "Entryway Bench with Barn Door Storage",
+      "sub": "Painted Poplar · Sliding Barn Doors · Virginia Beach"
+    },
+    {
+      "file": "furniture-09.jpg",
+      "category": "furniture",
+      "label": "Four-Door Storage Sideboard",
+      "sub": "Painted Poplar · Walnut Butcher Block Top · Baltimore, MD"
+    },
+    {
+      "file": "furniture-10.jpg",
+      "category": "furniture",
+      "label": "Home Office Desk with Drawers",
+      "sub": "Maple & Painted Poplar · White Metal Legs · Virginia Beach"
+    },
+    {
+      "file": "furniture-11.jpg",
+      "category": "furniture",
+      "label": "Custom Built-In Wine Storage",
+      "sub": "Painted Poplar · Wine Storage · Virginia Beach"
+    },
+    {
+      "file": "specialty-05.jpg",
+      "category": "specialty",
+      "label": "Outdoor Wedding Ceremony Arch",
+      "sub": "Cedar · Triangular A-Frame · Virginia Beach"
+    },
+    {
+      "file": "specialty-06.jpg",
+      "category": "specialty",
+      "label": "Custom Engraved Baseball Home Plate Awards",
+      "sub": "Baltic Birch · Custom Team Plaques · Virginia Beach"
+    },
+    {
+      "file": "specialty-07.jpg",
+      "category": "specialty",
+      "label": "Custom Engraved Pickleball Paddle",
+      "sub": "Maple · Personalized Military Retirement Gift · Quantico, VA."
+    },
+    {
+      "file": "specialty-08.jpg",
+      "category": "specialty",
+      "label": "Outdoor Small Animal Hutch",
+      "sub": "Painted Pine · Wire Mesh · Virginia Beach"
     }
   ]
 };
