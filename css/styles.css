@@ -340,14 +340,13 @@ nav {
 }
 
 /* About page — shop photos grid */
-.shop-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-.shop-photo { border-radius: 2px; overflow: hidden; height: 280px; }
-.shop-photo img { height: 100%; width: 100%; }
-.shop-photo.tall { height: 380px; }
+.shop-photos { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.shop-photo { border-radius: 2px; overflow: hidden; height: 380px; }
+.shop-photo img { height: 100%; width: 100%; object-fit: cover; display: block; }
 
 @media (max-width: 800px) {
   .shop-photos { grid-template-columns: 1fr 1fr; }
-  .shop-photo, .shop-photo.tall { height: 220px; }
+  .shop-photo { height: 220px; }
 }
 @media (max-width: 500px) {
   .shop-photos { grid-template-columns: 1fr; }
