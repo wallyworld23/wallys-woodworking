@@ -219,6 +219,48 @@ window.GALLERY_DATA = {
       "category": "specialty",
       "label": "Outdoor Small Animal Hutch",
       "sub": "Painted Pine · Wire Mesh · Virginia Beach"
+    },
+    {
+      "file": "decor-18.jpg",
+      "category": "decor",
+      "label": "Two-Tone Cookbook & Tablet Stand",
+      "sub": "Ebonized Wood & Maple · Recipe Holder · Virginia Beach"
+    },
+    {
+      "file": "decor-19.jpg",
+      "category": "decor",
+      "label": "Christmas Tree Shaped Serving Board",
+      "sub": "Maple & Canary Wood · Holiday Charcuterie Board · Virginia Beach"
+    },
+    {
+      "file": "decor-20.jpg",
+      "category": "decor",
+      "label": "Rustic Farmhouse Bread Board",
+      "sub": "Reclaimed Pine · Live Edge · Serving Board · Virginia Beach"
+    },
+    {
+      "file": "decor-21.jpg",
+      "category": "decor",
+      "label": "Custom Engraved Charcuterie Serving Board",
+      "sub": "Acacia · Personalized Movie Quote Engraving · Virginia Beach"
+    },
+    {
+      "file": "furniture-12.jpg",
+      "category": "furniture",
+      "label": "Custom Kids Desk with Built-In Storage",
+      "sub": "Painted Poplar · Bookshelf & Drawer Pedestal · LED Lighting · Virginia Beach"
+    },
+    {
+      "file": "furniture-13.jpg",
+      "category": "furniture",
+      "label": "Modern A-Frame Writing Desk",
+      "sub": "Painted Poplar · Angled Legs · Home Office · Virginia Beach"
+    },
+    {
+      "file": "specialty-09.jpg",
+      "category": "specialty",
+      "label": "Custom Kitchen Cabinets with Butcher Block Countertops",
+      "sub": "Painted Shaker · Butcher Block · Floating Shelves · Virginia Beach"
     }
   ]
 };
